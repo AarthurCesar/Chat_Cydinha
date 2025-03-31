@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #d67ab1;
+    --secondary-color: #128C7E;
+    --user-msg-color: #DCF8C6;
+    --bot-msg-color: #FFFFFF;
+    --error-color: #FFEBEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #EDEDED;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    height: 90vh;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: linear-gradient(135deg, #fab9f1, #f859d0, #ff56d5,#f800ba);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    
+    
+}
+.header h1{
+    
+    font-weight: 600;
+    flex: 1;
+    text-align: center;
+}
+
+.header i {
+    font-size: 1.5rem;
+}
+
+.chat-area {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #ECE5DD;
+    background-image: url("https://web.whatsapp.com/img/bg-chat-tile-light_a4be512e7195b6b733d9110b408f075d.png");
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: relative;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message.user {
+    background-color: var(--user-msg-color);
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+.message.assistant {
+    background-color: var(--bot-msg-color);
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+    box-shadow: 0 1px 0.5px rgba(0,0,0,0.1);
+}
+
+.message.error {
+    background-color: var(--error-color);
+    color: #D32F2F;
+    align-self: center;
+}
+
+.message-time {
+    display: block;
+    font-size: 0.7rem;
+    color: #666;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.file-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.file-message i {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    background: #F0F0F0;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-area input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input-area button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.input-area button:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.attach-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+#file-input {
+    display: none;
+}
+
+.typing {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    align-self: flex-start;
+}
+
+.typing-dots {
+    display: flex;
+    gap: 5px;
+}
+
+.typing-dots div {
+    width: 8px;
+    height: 8px;
+    background: #999;
+    border-radius: 50%;
+    animation: typingAnimation 1.4s infinite ease-in-out;
+}
+
+.typing-dots div:nth-child(1) { animation-delay: 0s; }
+.typing-dots div:nth-child(2) { animation-delay: 0.2s; }
+.typing-dots div:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typingAnimation {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-5px); }
+}
+
+/* Scrollbar */
+.chat-area::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-area::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+}
+
+.chat-area::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+/* Adicione ao seu CSS existente */
+.header {
+    background-color: #f8e1f4;
+    color: #8a2a72;
+}
+
+#send-button {
+    background-color: #d67ab1;
+}
+
+#send-button:hover {
+    background-color: #b85c99;
+}
+
+.fa-rings:before {
+    content: "💍";
+    font-style: normal;
+}
+
+.file-message i {
+    color: #d67ab1;
+}
+
+.message.assistant {
+    background-color: #f8e1f4;
+    color: #8a2a72;
+}
+
+.message.user {
+    background-color: #8a2a72;
+    color: white;
+}

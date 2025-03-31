@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cydinha</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <i class="fa-solid fa-ring"></i>
+            <h1>CYDINHA</h1>
+            
+        </div>
+
+        <div class="chat-area" id="chat-box">
+            <!-- <div class="message assistant">
+                Olá! Sou seu assistente IA. Como posso ajudar hoje?
+                <span class="message-time" id="current-time"></span>
+            </div> -->
+        </div>
+
+        <div class="input-area">
+            <label for="file-input" class="attach-btn" title="Anexar arquivo">
+                <i class="fas fa-paperclip"></i>
+                
+            </label>
+            
+            <input type="file" id="file-input" accept=".pdf,.txt">
+            
+            <input type="text" id="user-input" placeholder="Digite sua mensagem..." autocomplete="off">
+            
+            <button id="send-button" title="Enviar mensagem">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+            <button id="reset-button" class="reset-btn" title="Nova conversa">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Elementos DOM
+        const chatBox = document.getElementById('chat-box');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const fileInput = document.getElementById('file-input');
+        const resetButton = document.getElementById('reset-button');
+        let currentFile = null;
+
+        // Funções auxiliares
+        function getCurrentTime() {
+            return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+
+        function scrollToBottom() {
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function showTyping() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'message assistant typing';
+            typingDiv.innerHTML = `
+                <div class="typing-dots">
+                    <div></div><div></div><div></div>
+                </div>
+                <span class="message-time">${getCurrentTime()}</span>
+            `;
+            chatBox.appendChild(typingDiv);
+            scrollToBottom();
+            return typingDiv;
+        }
+
+        function displayMessage(role, content, filename = null) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+            
+            if (filename) {
+                messageDiv.innerHTML = `
+                    <div class="file-message">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>${filename}</span>
+                    </div>
+                    ${content ? `<div class="message-content">${content}</div>` : ''}
+                    <span class="message-time">${getCurrentTime()}</span>
+                `;
+            } else {
+                messageDiv.innerHTML = `
+                    <div class="message-content">${content}</div>
+                    <span class="message-time">${getCurrentTime()}</span>
+                `;
+            }
+            
+            const typing = document.querySelector('.typing');
+            if (typing) typing.remove();
+            
+            chatBox.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+        // Event Listeners
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                const file = e.target.files[0];
+                if (file.size > 8 * 1024 * 1024) { // 8MB
+                    displayMessage('error', 'Arquivo muito grande (máximo 8MB)');
+                    fileInput.value = '';
+                    return;
+                }
+                currentFile = file;
+                // displayMessage('user', null, currentFile.name);
+            }
+        });
+
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && (userInput.value.trim() || currentFile)) {
+                sendMessage();
+            }
+        });
+
+        sendButton.addEventListener('click', () => {
+            if (userInput.value.trim() || currentFile) {
+                sendMessage();
+            }
+        });
+
+        resetButton.addEventListener('click', resetChat);
+
+        // Lógica principal
+        async function sendMessage() {
+            const message = userInput.value.trim();
+            if (!message && !currentFile) return;
+
+            // Exibir mensagem do usuário
+            if (currentFile) {
+                displayMessage('user', message || "Arquivo enviado", currentFile.name);
+            } else {
+                displayMessage('user', message);
+            }
+
+            const formData = new FormData();
+            if (message) formData.append('message', message);
+            if (currentFile) formData.append('file', currentFile);
+
+            // Limpar inputs
+            userInput.value = '';
+            fileInput.value = '';
+            currentFile = null;
+
+            // Enviar para o backend
+            const typing = showTyping();
+            
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+                
+                if (response.status === 429) {
+                    const retryAfter = data.retry_after || 30;
+                    displayMessage('error', `${data.error} (Tente novamente em ${retryAfter} segundos)`);
+                    return;
+                }
+
+                if (!response.ok) {
+                    throw new Error(data.error || 'Erro desconhecido');
+                }
+
+                displayMessage('assistant', data.response);
+            } catch (error) {
+                displayMessage('error', error.message || 'Erro na conexão');
+                console.error(error);
+            } finally {
+                typing.remove();
+            }
+        }
+
+        async function resetChat() {
+            try {
+                const response = await fetch('/reset', { method: 'POST' });
+                
+                if (response.ok) {
+                    // Limpa a interface mas mantém a mensagem inicial
+                    chatBox.innerHTML = `
+                        <div class="message assistant>
+                           >${getCurrentTime()}</span>
+                        </div>
+                    `;
+                } else {
+                    const data = await response.json();
+                    throw new Error(data.error || 'Erro ao iniciar nova conversa');
+                }
+            } catch (error) {
+                displayMessage('error', error.message);
+                console.error(error);
+            }
+        }
+
+        // Inicialização
+        document.getElementById('current-time').textContent = getCurrentTime();
+        userInput.focus();
+    </script>
+</body>
+</html>

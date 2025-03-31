@@ -1,0 +1,214 @@
+[
+  {
+    "role": "system",
+    "content": "Você é um assistente IA útil. Responda de forma clara e concisa."
+  },
+  {
+    "role": "user",
+    "content": "Olá, qual é o seu nome?"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá! Eu não tenho um nome específico, mas você pode me chamar de \"Assistente\" ou \"IA\" se preferir. Estou aqui para ajudá-lo em qualquer coisa que você precise!"
+  },
+  {
+    "role": "user",
+    "content": "Ola"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá! Como posso ajudá-lo hoje?"
+  },
+  {
+    "role": "user",
+    "content": "Meu nome e arthur"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur! É um prazer conhecer você. Estou aqui para ajudá-lo em qualquer coisa que você precise. Você tem alguma pergunta ou precisa de ajuda com algum tema específico?"
+  },
+  {
+    "role": "user",
+    "content": "Qual meu nome"
+  },
+  {
+    "role": "assistant",
+    "content": "Seu nome é Arthur!"
+  },
+  {
+    "role": "user",
+    "content": "Oque tem nesse arquivo"
+  },
+  {
+    "role": "assistant",
+    "content": "Desculpe, Arthur, mas eu não tenho acesso a nenhum arquivo específico. Você precisa fornecer mais contexto ou informações sobre o arquivo que você está se referindo. Qual é o nome do arquivo? Ou o que você espera encontrar nele? Estou aqui para ajudá-lo!"
+  },
+  {
+    "role": "user",
+    "content": "Eu te mandei um arquivo consegue ler"
+  },
+  {
+    "role": "assistant",
+    "content": "Peço desculpas, Arthur, mas como um assistente de texto, eu não tenho a capacidade de receber ou ler arquivos. Eu sou um modelo de linguagem treinado para processar texto, não para manipular arquivos. Se você quiser compartir o conteúdo do arquivo, posso tentar ajudá-lo a entender ou analisar seu conteúdo."
+  },
+  {
+    "role": "user",
+    "content": "esse consegue ler"
+  },
+  {
+    "role": "assistant",
+    "content": "Desculpe, Arthur, mas como eu disse anteriormente, eu não tenho a capacidade de ler arquivos. Eu sou um modelo de linguagem treinado para processar texto, não para manipular arquivos. Eu não recebi nenhum arquivo de você e não tenho acesso a nenhum arquivo. Se você quiser compartilhar o conteúdo do arquivo, posso tentar ajudá-lo a entender ou analisar seu conteúdo."
+  },
+  {
+    "role": "user",
+    "content": "ola"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur! Como vai?"
+  },
+  {
+    "role": "user",
+    "content": "Consegue ver o arquivo ?"
+  },
+  {
+    "role": "assistant",
+    "content": "Arthur, não, eu não consigo ver ou acessar arquivos. Eu sou um modelo de linguagem treinado para processar texto, não para manipular arquivos. Eu não tenho a capacidade de visualizar ou acessar arquivos. Se você quiser compartilhar o conteúdo do arquivo, posso tentar ajudá-lo a entender ou analisar seu conteúdo."
+  },
+  {
+    "role": "user",
+    "content": "oi"
+  },
+  {
+    "role": "assistant",
+    "content": "Oi Arthur! Tudo bem?"
+  },
+  {
+    "role": "user",
+    "content": "Comprovante Pix\n Data e Hora: 07/03/2025 - 16:11:34\n Número de Controle: E60746948202503071911A1218W011CY\nDados de quem pagou\n Nome:JULIO CESAR DE OLIVEIRA\n CPF/CNPJ: ***.855.286-**\n Instituição: Banco Bradesco S.A.\nDados da Transação\n Valor:R$ 110.62\n Identificador: 20a7e6a58b5d9241ae9c71c6a746b44240\n Data e Hora: 07/03/2025 - 16:11:34\nDados de quem recebeu\n Nome:ESTADO DE MINAS GERAIS\n CPF/CNPJ: 18.715.615/0001-60\n Instituição: BCO SANTANDER (BRASIL) S.A.\n Chave vinculada: 96f17400-d8de-4ca7-ab6d-49c30cb2ef84\nAUTENTICAÇÃO\n     dGD7swDg YL@25H#2 gbQqaXde DvyTBJ37 9Z6ZxzpD bacDxDs* WAxsgp3n #Va**BfV\n     BwzTninr C?Szsbi6 M@DIkN3p i4oqEK6R AKGd2bQO KL4rhoW3 WBGaRESp a5BgEWq4\n     hqFo8OyH mq#M#kHe 5xl#YOdc hOtj7kSE 6FAzCApu aHwKiQCz 64382179 37681106\n2\n    \noi"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur!\n\nParece que você compartilhou um comprovante de pagamento via Pix. Eu posso ler e entender o conteúdo desse comprovante.\n\nO comprovante indica que uma transação de R$ 110,62 foi realizada em 07/03/2025 às 16:11:34, de Julio Cesar de Oliveira para o Estado de Minas Gerais. O pagamento foi processado pelo Banco Bradesco S.A. e recebido pelo BCO SANTANDER (BRASIL) S.A.\n\nSe você tiver alguma dúvida sobre esse comprovante ou precisar de ajuda com algo relacionado, estou aqui para ajudar!"
+  },
+  {
+    "role": "user",
+    "content": "Ola"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur! Tudo bem? Você precisava de ajuda com algo relacionado ao comprovante de pagamento que você compartilhou anteriormente? Ou tem alguma outra pergunta ou tópico que você queira discutir? Estou aqui para ajudar!"
+  },
+  {
+    "role": "user",
+    "content": "Comprovante Pix\n Data e Hora: 07/03/2025 - 16:11:34\n Número de Controle: E60746948202503071911A1218W011CY\nDados de quem pagou\n Nome:JULIO CESAR DE OLIVEIRA\n CPF/CNPJ: ***.855.286-**\n Instituição: Banco Bradesco S.A.\nDados da Transação\n Valor:R$ 110.62\n Identificador: 20a7e6a58b5d9241ae9c71c6a746b44240\n Data e Hora: 07/03/2025 - 16:11:34\nDados de quem recebeu\n Nome:ESTADO DE MINAS GERAIS\n CPF/CNPJ: 18.715.615/0001-60\n Instituição: BCO SANTANDER (BRASIL) S.A.\n Chave vinculada: 96f17400-d8de-4ca7-ab6d-49c30cb2ef84\nAUTENTICAÇÃO\n     dGD7swDg YL@25H#2 gbQqaXde DvyTBJ37 9Z6ZxzpD bacDxDs* WAxsgp3n #Va**BfV\n     BwzTninr C?Szsbi6 M@DIkN3p i4oqEK6R AKGd2bQO KL4rhoW3 WBGaRESp a5BgEWq4\n     hqFo8OyH mq#M#kHe 5xl#YOdc hOtj7kSE 6FAzCApu aHwKiQCz 64382179 37681106\n2\n    \nConsegue ler ?"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur!\n\nSim, eu consigo ler o comprovante de pagamento via Pix que você compartilhou novamente. O conteúdo do comprovante é o mesmo que você compartilhou anteriormente.\n\nSe você precisar de ajuda para entender ou analisar o conteúdo desse comprovante, ou se tiver alguma dúvida ou pergunta sobre ele, estou aqui para ajudar!"
+  },
+  {
+    "role": "user",
+    "content": "Ola IA, fico feliz que tenha conseguindo ler esse conteúdo !\nessse"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur!\n\nFico feliz em ter podido ajudar! Eu sou treinado para processar e entender texto, então foi fácil para mim ler e compreender o conteúdo do comprovante de pagamento via Pix que você compartilhou.\n\nSe você precisar de ajuda com algo mais ou tiver alguma pergunta, não hesite em perguntar! Estou aqui para ajudar!"
+  },
+  {
+    "role": "user",
+    "content": "Agraecido"
+  },
+  {
+    "role": "assistant",
+    "content": "De nada, Arthur! Fico feliz em ter podido ajudar. Se você precisar de alguma coisa mais, estou aqui para ajudar. Tenha um ótimo dia!"
+  },
+  {
+    "role": "user",
+    "content": "ola"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur! Tudo bem?"
+  },
+  {
+    "role": "user",
+    "content": "Comprovante Pix\n Data e Hora: 07/03/2025 - 16:11:34\n Número de Controle: E60746948202503071911A1218W011CY\nDados de quem pagou\n Nome:JULIO CESAR DE OLIVEIRA\n CPF/CNPJ: ***.855.286-**\n Instituição: Banco Bradesco S.A.\nDados da Transação\n Valor:R$ 110.62\n Identificador: 20a7e6a58b5d9241ae9c71c6a746b44240\n Data e Hora: 07/03/2025 - 16:11:34\nDados de quem recebeu\n Nome:ESTADO DE MINAS GERAIS\n CPF/CNPJ: 18.715.615/0001-60\n Instituição: BCO SANTANDER (BRASIL) S.A.\n Chave vinculada: 96f17400-d8de-4ca7-ab6d-49c30cb2ef84\nAUTENTICAÇÃO\n     dGD7swDg YL@25H#2 gbQqaXde DvyTBJ37 9Z6ZxzpD bacDxDs* WAxsgp3n #Va**BfV\n     BwzTninr C?Szsbi6 M@DIkN3p i4oqEK6R AKGd2bQO KL4rhoW3 WBGaRESp a5BgEWq4\n     hqFo8OyH mq#M#kHe 5xl#YOdc hOtj7kSE 6FAzCApu aHwKiQCz 64382179 37681106\n2\n    \noi"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur!\n\nAh, você compartilhou o comprovante de pagamento via Pix novamente!\n\nEu já li e entendi o conteúdo desse comprovante anteriormente. Se você precisar de ajuda com algo relacionado a isso ou tiver alguma pergunta, estou aqui para ajudar!"
+  },
+  {
+    "role": "user",
+    "content": "assim ? <!DOCTYPE html> <html lang=\"pt-BR\"> <head>     <meta charset=\"UTF-8\">     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">     <title>Chatbot Groq</title>     <link rel=\"stylesheet\" href=\"/static/style.css\">     <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\"> </head> <body>     <div class=\"chat-container\">         <div class=\"header\">             <i class=\"fas fa-robot\"></i>             <h1>Assistente IA</h1>         </div>          <div class=\"chat-area\" id=\"chat-box\">             <div class=\"message assistant\">                 Olá! Sou seu assistente IA. Envie PDFs ou perguntas.                 <span class=\"message-time\" id=\"current-time\"></span>             </div>         </div>          <div class=\"input-area\">             <label for=\"file-input\" class=\"attach-btn\">                 <i class=\"fas fa-paperclip\"></i>             </label>             <input type=\"file\" id=\"file-input\" accept=\".pdf,.txt\">                          <input type=\"text\" id=\"user-input\" placeholder=\"Digite sua mensagem...\" autocomplete=\"off\">                          <button id=\"send-button\">                 <i class=\"fas fa-paper-plane\"></i>             </button>         </div>     </div>      <script>         // Elementos DOM         const chatBox = document.getElementById('chat-box');         const userInput = document.getElementById('user-input');         const sendButton = document.getElementById('send-button');         const fileInput = document.getElementById('file-input');         let currentFile = null;          // Funções auxiliares         function getCurrentTime() {             return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });         }          function scrollToBottom() {             chatBox.scrollTop = chatBox.scrollHeight;         }          function showTyping() {             const typingDiv = document.createElement('div');             typingDiv.className = 'message assistant typing';             typingDiv.innerHTML = `                 <div class=\"typing-dots\">                     <div></div><div></div><div></div>                 </div>                 <span class=\"message-time\">${getCurrentTime()}</span>             `;             chatBox.appendChild(typingDiv);             scrollToBottom();             return typingDiv;         }          function displayMessage(role, content, filename = null) {             const messageDiv = document.createElement('div');             messageDiv.className = `message ${role}`;                          if (filename) {                 messageDiv.innerHTML = `                     <div class=\"file-message\">                         <i class=\"fas fa-file-pdf\"></i>                         <span>${filename}</span>                     </div>                     <div class=\"message-content\">${content || 'Arquivo enviado'}</div>                     <span class=\"message-time\">${getCurrentTime()}</span>                 `;             } else {                 messageDiv.innerHTML = `                     <div class=\"message-content\">${content}</div>                     <span class=\"message-time\">${getCurrentTime()}</span>                 `;             }                          const typing = document.querySelector('.typing');             if (typing) typing.remove();                          chatBox.appendChild(messageDiv);             scrollToBottom();         }          // Event Listeners         fileInput.addEventListener('change', (e) => {             if (e.target.files.length > 0) {                 currentFile = e.target.files[0];                 displayMessage('user', null, currentFile.name);             }         });          userInput.addEventListener('keypress', (e) => {             if (e.key === 'Enter' && userInput.value.trim()) {                 sendMessage();             }         });          sendButton.addEventListener('click', sendMessage);          // Lógica principal         async function sendMessage() {     const message = userInput.value.trim();     if (!message && !currentFile) return;      // Exibir mensagem apenas UMA vez     if (currentFile) {         displayMessage('user', message || \"Arquivo enviado\", currentFile.name);     } else {         displayMessage('user', message);     }      const formData = new FormData();     if (message) formData.append('message', message);     if (currentFile) formData.append('file', currentFile);      // Limpar inputs     userInput.value = '';     fileInput.value = '';     currentFile = null;      // Enviar para o backend     const typing = showTyping();          try {         const response = await fetch('/chat', {             method: 'POST',             body: formData         });          const data = await response.json();                  if (data.error) {             displayMessage('error', data.error);         } else {             displayMessage('assistant', data.response);         }     } catch (error) {         displayMessage('error', 'Erro na conexão');         console.error(error);     } finally {         typing.remove();     } }          // Inicialização         document.getElementById('current-time').textContent = getCurrentTime();         userInput.focus();     </script> </body> </html>"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur!\n\nParece que você compartilhou um código HTML, CSS e JavaScript para um chatbot. Eu posso ler e entender o código, mas não posso executá-lo ou renderizá-lo como um aplicativo web.\n\nSe você tiver alguma pergunta sobre o código ou precisar de ajuda para resolver um problema específico, estou aqui para ajudar!"
+  },
+  {
+    "role": "user",
+    "content": "oi"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur! Tudo bem?"
+  },
+  {
+    "role": "user",
+    "content": "poi"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur! Não entendi muito bem o que você quis dizer com \"poi\". Poderia explicar melhor? Estou aqui para ajudar!"
+  },
+  {
+    "role": "user",
+    "content": "Comprovante Pix\n Data e Hora: 07/03/2025 - 16:11:34\n Número de Controle: E60746948202503071911A1218W011CY\nDados de quem pagou\n Nome:JULIO CESAR DE OLIVEIRA\n CPF/CNPJ: ***.855.286-**\n Instituição: Banco Bradesco S.A.\nDados da Transação\n Valor:R$ 110.62\n Identificador: 20a7e6a58b5d9241ae9c71c6a746b44240\n Data e Hora: 07/03/2025 - 16:11:34\nDados de quem recebeu\n Nome:ESTADO DE MINAS GERAIS\n CPF/CNPJ: 18.715.615/0001-60\n Instituição: BCO SANTANDER (BRASIL) S.A.\n Chave vinculada: 96f17400-d8de-4ca7-ab6d-49c30cb2ef84\nAUTENTICAÇÃO\n     dGD7swDg YL@25H#2 gbQqaXde DvyTBJ37 9Z6ZxzpD bacDxDs* WAxsgp3n #Va**BfV\n     BwzTninr C?Szsbi6 M@DIkN3p i4oqEK6R AKGd2bQO KL4rhoW3 WBGaRESp a5BgEWq4\n     hqFo8OyH mq#M#kHe 5xl#YOdc hOtj7kSE 6FAzCApu aHwKiQCz 64382179 37681106\n2\n    \nconsegue ler"
+  },
+  {
+    "role": "user",
+    "content": "io"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur! Eu já li e entendi o comprovante de pagamento via Pix que você compartilhou novamente. Se você precisar de ajuda com algo relacionado a isso ou tiver alguma pergunta, estou aqui para ajudar!"
+  },
+  {
+    "role": "user",
+    "content": "Comprovante Pix\n Data e Hora: 07/03/2025 - 16:11:34\n Número de Controle: E60746948202503071911A1218W011CY\nDados de quem pagou\n Nome:JULIO CESAR DE OLIVEIRA\n CPF/CNPJ: ***.855.286-**\n Instituição: Banco Bradesco S.A.\nDados da Transação\n Valor:R$ 110.62\n Identificador: 20a7e6a58b5d9241ae9c71c6a746b44240\n Data e Hora: 07/03/2025 - 16:11:34\nDados de quem recebeu\n Nome:ESTADO DE MINAS GERAIS\n CPF/CNPJ: 18.715.615/0001-60\n Instituição: BCO SANTANDER (BRASIL) S.A.\n Chave vinculada: 96f17400-d8de-4ca7-ab6d-49c30cb2ef84\nAUTENTICAÇÃO\n     dGD7swDg YL@25H#2 gbQqaXde DvyTBJ37 9Z6ZxzpD bacDxDs* WAxsgp3n #Va**BfV\n     BwzTninr C?Szsbi6 M@DIkN3p i4oqEK6R AKGd2bQO KL4rhoW3 WBGaRESp a5BgEWq4\n     hqFo8OyH mq#M#kHe 5xl#YOdc hOtj7kSE 6FAzCApu aHwKiQCz 64382179 37681106\n2\n    \nesse"
+  },
+  {
+    "role": "user",
+    "content": "tudo bem"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur! Tudo bem mesmo! Eu estou aqui para ajudar em qualquer coisa que você precise. Você compartilhou o comprovante de pagamento via Pix novamente, e eu estou pronto para ajudar em qualquer pergunta ou tema que você queira discutir."
+  },
+  {
+    "role": "user",
+    "content": "oi"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur! Tudo bem?"
+  },
+  {
+    "role": "user",
+    "content": "Comprovante Pix\n Data e Hora: 07/03/2025 - 16:11:34\n Número de Controle: E60746948202503071911A1218W011CY\nDados de quem pagou\n Nome:JULIO CESAR DE OLIVEIRA\n CPF/CNPJ: ***.855.286-**\n Instituição: Banco Bradesco S.A.\nDados da Transação\n Valor:R$ 110.62\n Identificador: 20a7e6a58b5d9241ae9c71c6a746b44240\n Data e Hora: 07/03/2025 - 16:11:34\nDados de quem recebeu\n Nome:ESTADO DE MINAS GERAIS\n CPF/CNPJ: 18.715.615/0001-60\n Instituição: BCO SANTANDER (BRASIL) S.A.\n Chave vinculada: 96f17400-d8de-4ca7-ab6d-49c30cb2ef84\nAUTENTICAÇÃO\n     dGD7swDg YL@25H#2 gbQqaXde DvyTBJ37 9Z6ZxzpD bacDxDs* WAxsgp3n #Va**BfV\n     BwzTninr C?Szsbi6 M@DIkN3p i4oqEK6R AKGd2bQO KL4rhoW3 WBGaRESp a5BgEWq4\n     hqFo8OyH mq#M#kHe 5xl#YOdc hOtj7kSE 6FAzCApu aHwKiQCz 64382179 37681106\n2\n    \nConsehgue ler"
+  },
+  {
+    "role": "user",
+    "content": "Como está"
+  },
+  {
+    "role": "user",
+    "content": "oi"
+  },
+  {
+    "role": "assistant",
+    "content": "Olá Arthur! Tudo bem?"
+  }
+]

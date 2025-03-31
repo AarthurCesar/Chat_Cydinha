@@ -1,0 +1,28 @@
+# Variáveis de ambiente (CRÍTICO não subir)
+.env
+.env.*
+*.env
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+.python-version
+
+# Arquivos temporários do seu app
+/uploads/
+/temp/
+/sessions/
+
+# Logs e dados locais
+*.log
+*.sqlite3
+
+# Configurações de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
